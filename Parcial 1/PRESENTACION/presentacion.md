@@ -11,7 +11,7 @@ Entré a esta carrera por un motivo claro, poder llegar a ser una persona capaci
 
 Mi horario consta de estas horas:
 
-|Hora            |lunes           |         martes|  miercoles  | Jueves |Viernes|
+|Hora            |Lunes           |         Martes|  Miercoles  | Jueves |Viernes|
 |:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
 |7:00 - 8:00     |Programacion Web |Programacion Web|Programacion Web|Programacion Web|Programacion Web|
 |8:00 - 9:00     |Principios Electricos y Aplicaciones Digitales|Fundamentos de Ingenieria de Software|Principios Electricos y Aplicaciones Digitales|Fundamentos de Ingenieria de Software|
@@ -22,7 +22,9 @@ Mi horario consta de estas horas:
 |1:00 - 2:00     |Sistemas Operativos||||
 |2:00 - 3:00     |Ecuaciones Diferenciales |Ecuaciones Diferenciales |Ecuaciones Diferenciales |Ecuaciones Diferenciales |Ecuaciones Diferenciales
 
-Como se puede apreciar, soy irregular.
+Como se puede apreciar, soy irregular pero como dice el dicho
+
+> No es vergüenza no saber, sino saber que no sabes y no querer saber - Ingeniero Bruno Lopez Takeyas-
 
 En datos curiosos sobre mi que puedo dar es lo siguiente:
 
