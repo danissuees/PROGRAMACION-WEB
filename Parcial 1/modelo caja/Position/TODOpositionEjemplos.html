@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.caja {
+        width: 200px;
+        height: 200px;
+        background-color: wheat;
+        border: 2px solid black;
+        color: black;
+          }
+
+    #Static
+        {
+        position:static;
+        top: 10px;
+        left: 300px;
+        }
+    #Relative 
+           {
+        position:relative;
+        top: 10px;
+        left: 300px;
+           }
+    #Absolute
+           {
+        position:absolute;
+        top: 170px;
+        left: 2px;
+           } 
+    #Fixed 
+           {
+        position:fixed;
+        top: 10px;
+        left: 400px;
+           }
+    #Sticky
+           {
+        position:sticky;
+        top: 10px;
+        left: 1px;
+           }
+    </style>
+
+</head>
+<body>
+    <div class="caja" id="Static">Static</div>
+    <div class="caja" id="Relative">Relative</div>
+    <div class="caja" id="Absolute">Absolute</div>
+    <div class="caja" id="Fixed">Fixed</div>
+    <div class="caja" id="Sticky">Sticky</div>
+    <div style="height: 500px;">Spam para Scroll</div>
+</body>
+</html>
