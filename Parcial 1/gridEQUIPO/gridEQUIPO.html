@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+
+
+    <title>22100182 22100193</title>
+
+    <style>
+
+        .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+
+        body
+        {
+        background-color: rgb(0, 0, 0);
+        height: 2000px;
+        }
+
+        .div1 
+        { 
+        position: absolute;
+        left: 400px;
+   
+        margin-top: 20px;
+   
+        grid-area: 1 / 2 / 2 / 5;
+        background-image: url('https://cdn2.steamgriddb.com/logo/51134370b27649ed7516e777c5847bda.png') ;
+        background-size: cover; 
+        width: 700px;
+        height: 300px;
+        }
+
+        .div2 
+         { 
+        display: flex;
+        grid-area: 2 / 3 / 5 / 4; 
+        position: relative;
+        left: 250px;
+        top: 210px;
+    
+    
+
+        background-image: url('https://cdn.mos.cms.futurecdn.net/pZqQNSkvPjaPnUZ2GFPV3b.jpg');
+        background-size: 1000px 550px;
+        background-position-y: bottom;
+        background-position-x: center;
+        background-repeat: no-repeat;
+    
+        width: 1000px;
+        height: 700px;
+
+        justify-content: center;
+        align-items: center;
+
+        overflow: visible; 
+        clip-path: inset(-50px 0 0 0);     
+        }
+
+        .div2:hover .img1 {
+            transform: scale(1.05); 
+        }
+
+        .img1{
+        width: 650px;
+        height: 700px;
+        transition: transform 1s ease;
+        }
+
+        .div3 
+        {
+        position: fixed; 
+        top: 20px;
+    
+        width: 250px;
+        height: 250px;
+    
+        }
+
+        .img2
+        {
+  
+        width: 100px;
+        height: 80px;
+
+        }
+
+        .contenido {
+        clear: both;
+        margin-top: 250px; 
+        text-align: center;
+        font-size: xx-large;
+        font-weight: 800;
+        }
+
+        h1{
+        font-family: "Bebas Neue", sans-serif;
+        color: aliceblue;
+        }
+
+        .conte{
+           
+        
+    
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.5em;
+        color: aliceblue;
+        background-color: #232c35;                        
+        border-radius: 2%;  
+        padding: 15px;
+
+        }
+
+        #conte1{
+        margin-top: 40px;
+        margin-left: 720px;
+           
+        width: 600px;
+        height: 300px;
+        opacity: 0.9;
+
+        }
+
+        #conte2{
+        margin-top: 40px;
+        margin-left: 180px;
+           
+        width: 600px;
+        height: 300px;
+        opacity: 0.9;
+
+        }
+
+        .pa{
+        font-family: sans-serif;
+        font-size: large;
+        text-align: justify;
+        color: rgb(188, 200, 211);
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        }
+
+        #img3{
+            float: left;
+            margin-left: 250px;
+            margin-top: 40px;
+            height: 310px;
+            width: 430px;  
+            border-radius: 20%;  
+
+            mask-image: radial-gradient(circle, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%);
+            -webkit-mask-image: radial-gradient(circle, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%);
+          
+        }
+        #img4{
+            float: right;
+            margin-right: 250px;
+            margin-top: 40px;
+            height: 310px;
+            width: 450px;  
+            border-radius: 20%;  
+
+            mask-image: radial-gradient(circle, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%);
+            -webkit-mask-image: radial-gradient(circle, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%);
+          
+        }
+        #img3, #img4 {
+    transition: transform 1s ease;
+}
+
+#img3:hover, #img4:hover {
+    transform: scale(1.10); 
+}
+
+    </style>
+
+</head>
+<body>
+
+
+
+<div class="div1"></div>
+
+<div class="div2">
+        <img  class = 'img1'src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0c3e9ce2-d203-4d7b-ae87-18a8368d8545/dgriorv-14c34d61-6349-4da2-8052-c4b799bef04f.png/v1/fit/w_828,h_828/tlou_2_ellie_by_iggyrender_dgriorv-414w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzBjM2U5Y2UyLWQyMDMtNGQ3Yi1hZTg3LTE4YTgzNjhkODU0NVwvZGdyaW9ydi0xNGMzNGQ2MS02MzQ5LTRkYTItODA1Mi1jNGI3OTliZWYwNGYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.mefS7NNscW56O379Dx_5WZgr6Putv9KYK6JI5oJ-57k" alt="ellie"> 
+</div>
+
+    <div class="div3">
+        <img class="img2"src="https://www.nicepng.com/png/full/613-6132762_fireflies-last-of-us-firefly-logo.png" alt="fireflies">
+    </div>
+
+    <div class="contenido">
+        <h1>Personajes</h1>
+    </div>
+
+    <img  id="img3" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f3e3b0c3-145c-4884-a869-ffa85b9c985e/de1f5zu-6b0254db-f216-4f60-bc5a-543517365c29.png/v1/fit/w_828,h_466,q_70,strp/the_last_of_us_part_ii_models___joel_by_fonzzz002_de1f5zu-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjE2MCIsInBhdGgiOiJcL2ZcL2YzZTNiMGMzLTE0NWMtNDg4NC1hODY5LWZmYTg1YjljOTg1ZVwvZGUxZjV6dS02YjAyNTRkYi1mMjE2LTRmNjAtYmM1YS01NDM1MTczNjVjMjkucG5nIiwid2lkdGgiOiI8PTM4NDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.U8sOTMT9WWuLpLqcOKL07fQ1irVAa9ZXqTQz1bAYpwU" alt="joel">
+
+    <div class="conte" id="conte1">
+
+      <h1 class="titu">Joel Miller</h1>
+      <br>
+      <p class="pa">Este personaje es un sobreviviente endurecido que se transforma tras la trágica muerte de su hija, convirtiéndose en una figura paternal para una joven con la que desarrolla un profundo vínculo en un mundo postapocalíptico. A lo largo de su viaje, enfrenta dilemas morales sobre el amor y la supervivencia, combinando ternura y vulnerabilidad con una naturaleza pragmática y a veces violenta. Su historia resuena con temas de sacrificio y redención, haciendo de él un personaje inolvidable en la narrativa de los videojuegos.</p>
+    </div>
+
+    <img  id="img4" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f3e3b0c3-145c-4884-a869-ffa85b9c985e/de1f609-4705f7d0-8bdc-4024-bd48-8253970e2327.png/v1/fit/w_828,h_466,q_70,strp/the_last_of_us_part_ii_models___ellie_by_fonzzz002_de1f609-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjE2MCIsInBhdGgiOiJcL2ZcL2YzZTNiMGMzLTE0NWMtNDg4NC1hODY5LWZmYTg1YjljOTg1ZVwvZGUxZjYwOS00NzA1ZjdkMC04YmRjLTQwMjQtYmQ0OC04MjUzOTcwZTIzMjcucG5nIiwid2lkdGgiOiI8PTM4NDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.oPOFsmwvGkLrqtxXJMxBhDgLv3aeE4rlmFwqc15HDJQ" alt="ellie2">
+
+
+    <div class="conte" id="conte2">
+
+        <h1 class="titu">Ellie Williams</h1>
+        <br>
+        <p class="pa">Una de las protagonistas centrales, esta joven destaca por su valentía y resiliencia en un mundo devastado. Desde su infancia, ha enfrentado la pérdida y el sufrimiento, lo que le ha permitido desarrollar una fuerte determinación y habilidades de supervivencia. A medida que avanza la narrativa, su relación con su protector se convierte en un aspecto crucial de su vida. Ellie evoluciona de una joven inocente a una guerrera decidida, enfrentando dilemas morales complejos sobre venganza y redención, lo que la convierte en un personaje memorable y profundamente humano.</p>
+    </div>
+
+    <img  id="img3" src="https://es.digitaltrends.com/wp-content/uploads/2023/04/Captura-web_4-4-2023_133831_static.wikia_.nocookie.net_.jpeg?resize=800%2C418&p=1" alt="abby">
+
+
+    <div class="conte" id="conte1">
+
+        <h1 class="titu">Abby Anderson</h1>
+        <br>
+          <p class="pa">Este personaje es una figura clave en la narrativa, inicialmente presentada como una antagonista cuya motivación proviene de la búsqueda de venganza tras la muerte de su padre a manos de un ser querido. A medida que se desarrolla la historia, su personaje evoluciona, mostrando una lucha interna entre el dolor por la pérdida y la búsqueda de redención. Fuerte y hábil, enfrenta dilemas éticos que la llevan a cuestionar sus acciones y su camino, desafiando las percepciones tradicionales de héroes y villanos.</p>
+    </div>
+
+    <img  id="img4" src="https://gaymingmag.com/wp-content/uploads/2020/07/levtlou2-1024x576.jpg" alt="lev">
+
+    <div class="conte" id="conte2">
+
+        <h1 class="titu">Lev</h1>
+        <br>
+        <p class="pa">Este joven aporta una nueva perspectiva a la narrativa, representando la lucha interna entre su identidad de género y las creencias de su comunidad. A pesar de ser miembro de un grupo religioso opuesto a la violencia, enfrenta un conflicto profundo que lo lleva a buscar aceptación y pertenencia. A lo largo de la historia, se convierte en un aliado esencial de una guerrera, mostrando valentía y resiliencia sorprendentes. Su relación con la guerrera permite explorar temas de identidad, sacrificio y redención, convirtiéndolo en un personaje entrañable y relevante.</p>
+    </div>
+  
+      
+      
+
+    
+</body>
+</html>

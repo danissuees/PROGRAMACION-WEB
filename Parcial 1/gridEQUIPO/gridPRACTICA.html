@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div a{
+            color: white;
+            font-weight: 20px;
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+.contenedor{
+    display:grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 10% 90% 0%;
+    background-color: rgb(177, 238, 240);
+   
+    grid-template-areas: "encabezado encabezado encabezado  "
+                         "barralateral contenido pie "  
+                         "barralateral contenido pie"
+                    
+                        ;
+    
+}
+.one{
+    grid-area: encabezado;
+    background-color: rgba(132, 3, 37, 0.955);
+    background-size: 100%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 16px;
+   
+    background-position: center;
+    background-size: cover;
+    
+ }
+.two{
+    grid-area: barralateral;
+    background-color: rgba(71, 78, 145, 0.955);
+    background-image: url(https://i.pinimg.com/564x/33/a1/be/33a1be50d899e0ec8cb8477efc04b7aa.jpg);
+    background-size: 100%;
+  position: relative;
+ 
+
+}
+.three{
+    grid-area: contenido;
+    background-color: rgba(136, 124, 203, 0.955);
+    
+    background-image: url(https://i.pinimg.com/564x/12/33/e4/1233e473ba590da77147c46d9efa048d.jpg);
+    background-size: 100%;
+    position: relative;
+}
+.four{
+    grid-area: pie;
+    background-color: rgba(38, 36, 124, 0.955);
+    background-image: url(https://i.pinimg.com/564x/26/79/69/267969e7490f036304680da03346a0ea.jpg);
+    background-size: 100%;
+    position: relative;
+}
+div h1 {
+    color: azure;
+    text-align: center;
+}
+
+
+    </style>
+</head>
+<body>
+    <center>
+        <div class="contenedor" >
+            <div class="one">
+               
+                <h1> &#9733 &#9733 &#9733  PERRITOS BONITOS &#9733 &#9733  &#9733</h1>
+            </div>
+            <div class="two">
+                <a href="https://unsplash.com/es/images/animals/dog">
+            <h2>Perros adorables</h2>
+            
+            </div>
+            <div class="three">
+                <a href="https://unsplash.com/es/s/fotos/perros-graciosos">
+                <h2>Perros graciosos </h2>
+    
+    
+            </div>
+            <div class="four">
+                <a href="https://unsplash.com/es/s/fotos/perro-dormido">
+               <h2>Perros durmiendo</h2>
+    
+            </div>
+           
+        </div>
+
+    </center>
+
+</body>
+</html>
