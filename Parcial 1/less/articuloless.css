@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #D52941;
+  color: black;
+}
+h3 {
+  text-align: center;
+}
+p {
+  text-indent: 20px;
+}
+#titulo {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.5;
+  text-align: center;
+  border: 2px solid black;
+}
+#titulo2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  justify-content: left;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.5;
+  text-align: left;
+  background-color: white;
+  border: 2px solid black;
+}
+.parrafo {
+  font-family: monospace;
+  background-color: #FCD581;
+  width: 60%;
+  margin: 20px auto;
+  line-height: 1.5;
+  border: 2px solid black;
+  padding: 20px;
+}
+.caja {
+  border: 0.5px solid black;
+  color: black;
+}
+#caja1 {
+  width: 200px;
+  height: 200px;
+  float: left;
+  background-size: 100%;
+  background-image: url(https://i.scdn.co/image/ab67616d0000b2737005885df706891a3c182a57);
+}
+#caja2 {
+  display: grid;
+  float: right;
+  place-items: center;
+  width: 340px;
+  height: 220px;
+  background-size: 100%;
+  background-image: url(https://pbs.twimg.com/media/EVxJSC4WAAAiGgu.jpg);
+}
+#caja3 {
+  float: left;
+  display: grid;
+  place-items: center;
+  width: 420px;
+  height: 240px;
+  background-size: 100%;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAC_rWIEA6KLfDdahcMHIlQNhAEIlFUw6PnA&s);
+}
+#caja4 {
+  float: right;
+  width: 270px;
+  height: 1000px;
+}
+#fl {
+  float: left;
+  display: grid;
+  place-items: center;
+  width: 270px;
+  height: 270px;
+  background-size: 100%;
+  background-image: url(https://m.media-amazon.com/images/I/71Ls2qvxPjL._UF1000,1000_QL80_.jpg);
+}
+#ch {
+  float: left;
+  display: grid;
+  place-items: center;
+  width: 270px;
+  height: 270px;
+  background-size: 100%;
+  background-image: url(https://m.media-amazon.com/images/I/51-RmNpoSML._UF1000,1000_QL80_.jpg);
+}
+#cm {
+  float: left;
+  display: grid;
+  place-items: center;
+  width: 270px;
+  height: 270px;
+  background-size: 100%;
+  background-image: url(https://i.scdn.co/image/ab67616d0000b273696b4e67423edd64784bfbb4);
+}
+#caja5 {
+  float: left;
+  width: 270px;
+  height: 1000px;
+}
+#caja5 h3 {
+  margin: 40px 0;
+  text-align: center;
+  padding-left: 10px;
+}
+#logo {
+  float: inline-start;
+  display: grid;
+  place-items: center;
+  width: 100px;
+  height: 64px;
+  background-size: 100%;
+  background-image: url(https://1000marcas.net/wp-content/uploads/2020/03/London-Underground-Logo-1969.png);
+}
