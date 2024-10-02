@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        table{
+            width: 50%;
+        }
+        table, td{
+            border: 2px solid black;
+        }
+        tbody>tr:nth-child(4){
+            background-color: blanchedalmond;
+            
+        }
+        tbody>tr:hover{
+            background-color: black;
+            color: white;
+        }
+        tbody>tr td:active{
+            background-color: white;
+            color: black;
+        }
+        table{
+            background-color: aliceblue;
+        }
+
+        @media screen and (max-width:500px) {
+            table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        border: none; 
+        
+    }
+    table, td{
+        border: 2px solid black;
+    }
+
+    tbody, tr, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 2px solid black; 
+    }
+    tbody tr td {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid black; 
+    }
+    tbody tr td:last-child {
+        border-bottom: none; 
+    }
+    tbody tr td::before {
+        
+        font-weight: bold;
+        display: inline-block;
+        width: 50%; 
+        padding-right: 10px;
+    }
+    tbody tr td:first-child {
+        background-color: aliceblue;
+        text-align: center;
+        font-weight: bold;
+        width: 100%;
+    }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>    
+                <td>Materia</td>
+                <td>Lunes</td>
+                <td>Martes</td>
+                <td>Miercoles</td>
+                <td>Jueves</td>
+                <td>Viernes</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>7-8</td>
+                <td>WEB</td>
+                <td>WEB</td>
+                <td>WEB</td>
+                <td>WEB</td>
+                <td>WEB</td>
+            </tr>
+            <tr>
+                <td>8-9</td>
+                <td>PEAD</td>
+                <td>FIS</td>
+                <td>PEAD</td>
+                <td>FIS</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9-10</td>
+                <td>PEAD</td>
+                <td>FIS</td>
+                <td>PEAD</td>
+                <td>FIS</td>
+                <td>PEAD</td>
+            </tr>
+            <tr>
+                
+                    <td>10-11</td>
+                    <td></td>
+                    <td>SO</td>
+                    <td></td>
+                    <td>SO</td>
+                    <td></td>
+               
+            </tr>
+            <tr>
+               
+                    <td>11-12</td>
+                    <td>FBD</td>
+                    <td>FBD</td>
+                    <td>FBD</td>
+                    <td>FBD</td>
+                    <td>FBD</td>
+                
+            </tr>
+            <tr>
+                    <td>12-13</td>
+                    <td>SO</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            </tr>
+            <tr>
+                <td>13-14</td>
+                <td>SO</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>14-15</td>
+                <td>ED</td>
+                <td>ED</td>
+                <td>ED</td>
+                <td>ED</td>
+                <td>ED</td>
+            </tr>
+        
+
+        </tbody>
+    </table>
+</body>
+</html>
