@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <style>
+        .SinPure{
+            background-color: azure;
+        }
+        .Pure{
+            background-color: blanchedalmond;
+        }
+   
+
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="SinPure">
+    <form action="#" method="GET" enctype="application/x-www-form-urlencoded" >
+      
+        <label>Registro de Usuario</label>
+        <br>
+        <label for="nom">Nombre</label>
+        <input type="text" name="Nombre" id="nom">
+        <label for="nom">Apellido Paterno</label>
+        <input type="text" name="ApellidoP" id="apep">
+        <input type="tel" name="phone" placeholder="Ingrese numero de telefono">
+        
+
+
+        <input type="submit" value="Enviar">
+        <br>
+        <input type="file" name="fileupload">
+
+        
+    </form>
+    <br>
+    </div>
+    <div class="Pure">
+        <form class="pure-form">
+            <fieldset>
+                <legend>Registro de Usuario</legend>
+                <input type="name" placeholder="Nombre" />
+                <input type="name" placeholder="Apellido Paterno" />
+                <input type="number" placeholder="Ingrese numero de telefono"/>
+                <input type="file">
+                <button type="submit" class="pure-button pure-button-primary">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
