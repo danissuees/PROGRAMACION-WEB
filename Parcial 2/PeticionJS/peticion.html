@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos UwU</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: #2D3047;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            background: 	#FFDBB5;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin-top: 120px; /* Espacio para el header fijo */
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            max-width: 1200px;
+            background-color: 	#E0A458;
+            border-bottom: 1px solid #e0e0e0;
+            z-index: 10;
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 30px;
+            color: #2D3047;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .nyan-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 5px 0;
+        }
+
+        .nyan-animation {
+            display: inline-block;
+            animation: move 1.5s linear infinite;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(100%);
+            }
+            50% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color :#419D78;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #d06184;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Gatos Mensos</h1>
+        <div class="nyan-container">
+            <div class="nyan-animation">
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+                <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-space.gif" alt="Nyan Cat" width="60" />
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="buttons">
+            <button id="loadAsync">Async/Await</button>
+            <button id="loadFetchThen">Fetch Then</button>
+            <button id="loadXMLHttp">XMLHttpRequest</button>
+            <button id="loadJQuery">jQuery</button>
+        </div>
+        <div class="gallery" id="gallery"></div>
+    </div>
+
+    <script>
+        const gallery = document.getElementById('gallery');
+
+        function displayImages(images) {
+            gallery.innerHTML = ''; 
+            images.forEach(imageData => {
+                const imgElement = document.createElement('img');
+                imgElement.src = imageData.url;
+                imgElement.alt = "Imagen de gato";
+                gallery.appendChild(imgElement);
+            });
+        }
+
+        async function loadImagesAsync() {
+            try {
+                const response = await fetch('https://api.thecatapi.com/v1/images/search?limit=8');
+                const images = await response.json();
+                displayImages(images);
+            } catch (error) {
+                console.error("Error al cargar imágenes con async/await:", error);
+            }
+        }
+
+        function loadFetchThen() {
+            fetch('https://api.thecatapi.com/v1/images/search?limit=8')
+                .then(response => response.json())
+                .then(images => displayImages(images))
+                .catch(error => console.error("Error al cargar imágenes con fetch y then:", error));
+        }
+
+        function loadXMLHttpRequest() {
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://api.thecatapi.com/v1/images/search?limit=8", true);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    const images = JSON.parse(xhr.responseText);
+                    displayImages(images);
+                } else {
+                    console.error("Error al cargar imágenes con XMLHttpRequest");
+                }
+            };
+            xhr.onerror = function () {
+                console.error("Error de red al cargar imágenes con XMLHttpRequest");
+            };
+            xhr.send();
+        }
+
+        function loadJQuery() {
+            $.ajax({
+                url: 'https://api.thecatapi.com/v1/images/search?limit=8',
+                method: 'GET',
+                success: function(images) {
+                    displayImages(images);
+                },
+                error: function() {
+                    console.error("Error al cargar imágenes con jQuery");
+                }
+            });
+        }
+
+        document.getElementById('loadAsync').addEventListener('click', loadImagesAsync);
+        document.getElementById('loadFetchThen').addEventListener('click', loadFetchThen);
+        document.getElementById('loadXMLHttp').addEventListener('click', loadXMLHttpRequest);
+        document.getElementById('loadJQuery').addEventListener('click', loadJQuery);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
