@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Imagen y Ver PDF</title>
+</head>
+<body>
+    <h1>Formulario de Subida</h1>
+    <form id="uploadForm" action="http://localhost:3000/Formulario/" method="POST" enctype="multipart/form-data" target="_blank">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+
+        <label for="archivo">Seleccionar Imagen:</label>
+        <input type="file" id="archivo" name="archivo" accept="image/*" required>
+        <br><br>
+
+        <button type="submit">ver pdf</button>
+    </form>
+
+    <script>
+        document.getElementById('uploadForm').onsubmit = async function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(document.getElementById('uploadForm'));
+            
+            try {
+                const response = await fetch('http://localhost:3000/Formulario/', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const pdfBlob = await response.blob();
+                const pdfUrl = URL.createObjectURL(pdfBlob);
+                window.open(pdfUrl, '_blank'); 
+
+            } catch (error) {
+                console.error('Error al subir la imagen:', error);
+            }
+        };
+    </script>
+</body>
+</html>
