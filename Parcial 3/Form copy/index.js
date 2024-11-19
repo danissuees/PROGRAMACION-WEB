@@ -37,8 +37,7 @@ app.post('/Formulario/', upload.single('archivo'), async (req, res) => {
         doc.text("Imagen subida con éxito", 10, 10);
         
         const imageData = fs.readFileSync(imagePath).toString('base64');
-        doc.addImage(`data:image/jpeg;base64,${imageData}`, "JPEG", 10, 20, 180, 160); // Ajusta el tamaño y posición según tus necesidades
-
+        doc.addImage(`data:image/jpeg;base64,${imageData}`, "JPEG", 10, 20, 180, 160); 
         doc.save(pdfPath);
 
         res.setHeader('Content-Type', 'application/pdf');
