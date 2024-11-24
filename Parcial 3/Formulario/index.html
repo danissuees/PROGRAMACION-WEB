@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aloha</title>
+    <title>Gestión de Productos</title>
     <style>
         body {
             background-color: #ffe4e1; 
@@ -11,7 +11,7 @@
             color: #000000; 
             margin: 20px;
         }
-        h1 {
+        h1, h2 {
             text-align: center;
         }
         form {
@@ -27,7 +27,7 @@
             margin-bottom: 8px;
             font-weight: bold;
         }
-        input[type="text"], input[type="file"] {
+        input[type="text"], input[type="file"], input[type="number"], select {
             width: 100%;
             padding: 8px;
             margin-bottom: 16px;
@@ -45,38 +45,112 @@
         button:hover {
             background-color: #ff9999;
         }
+        .product-list {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ffcccc;
+            border-radius: 10px;
+            background-color: #fff5f5; 
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ffcccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
     </style>
 </head>
 <body>
-    <h1>Formulario de Subida</h1>
-    <form id="uploadForm" action="http://localhost:3000/Formulario/" method="POST" enctype="multipart/form-data" target="_blank">
+    <h1>Gestión de Productos</h1>
+    <form id="uploadForm" action="http://localhost:3002/Formulario/" method="POST" enctype="multipart/form-data">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre">
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="descripcion">Descripción:</label>
+        <input type="text" id="descripcion" name="descripcion" required>
+
+        <label for="tipo">Tipo de Producto:</label>
+        <select id="tipo" name="tipo" required>
+            <option value="Guitarra">Guitarra</option>
+            <option value="Pedal">Pedal</option>
+            <option value="Amplificador">Amplificador</option>
+            <option value="Otro">Otro</option>
+        </select>
+
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio" step="0.01" min="0" required>
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+            <option value="Nuevo">Nuevo</option>
+            <option value="Usado">Usado</option>
+        </select>
 
         <label for="archivo">Seleccionar Imagen:</label>
-        <input type="file" id="archivo" name="archivo" accept="image/*">
+        <input type="file" id="archivo" name="archivo" accept="image/*" required>
 
-        <button type="submit">Ver PDF</button>
+        <button type="submit">Subir Producto</button>
     </form>
 
+    <div class="product-list">
+        <h2>Lista de Productos</h2>
+        <button id="getProducts">Ver Productos</button>
+        <ul id="productList"></ul>
+    </div>
+
     <script>
+        
         document.getElementById('uploadForm').onsubmit = async function(event) {
             event.preventDefault();
 
             const formData = new FormData(document.getElementById('uploadForm'));
             
             try {
-                const response = await fetch('http://localhost:3000/Formulario/', {
+                const response = await fetch('http://localhost:3002/Formulario/', {
                     method: 'POST',
                     body: formData
                 });
                 
-                const pdfBlob = await response.blob();
-                const pdfUrl = URL.createObjectURL(pdfBlob);
-                window.open(pdfUrl, '_blank'); 
-
+                if (response.ok) {
+                    alert('Producto registrado con éxito');
+                    document.getElementById('getProducts').click();
+                } else {
+                    const errorData = await response.json();
+                    alert('Error: ' + errorData.errores.map(err => err.msg).join(', '));
+                }
             } catch (error) {
-                console.error('Error al subir la imagen:', error);
+                console.error('Error al subir el producto:', error);
+            }
+        };
+
+       
+        document.getElementById('getProducts').onclick = async function() {
+            try {
+                const response = await fetch('http://localhost:3002/productos');
+                const productos = await response.json();
+
+                const productList = document.getElementById('productList');
+                productList.innerHTML = ''; 
+                productos.forEach(producto => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `
+                        <strong>Nombre:</strong> ${producto.nombre} <br>
+                        <strong>Descripción:</strong> ${producto.descripcion} <br>
+                        <strong>Tipo:</strong> ${producto.tipo} <br>
+                        <strong>Precio:</strong> $${producto.precio} <br>
+                        <strong>Estado:</strong> ${producto.estado} <br>
+                        <strong>PDF:</strong> <a href="http://localhost:3002/productos/${producto.id || producto.nombre}/pdf" target="_blank">Ver PDF</a>
+                    `;
+                    productList.appendChild(li);
+                });
+            } catch (error) {
+                console.error('Error al obtener los productos:', error);
             }
         };
     </script>
