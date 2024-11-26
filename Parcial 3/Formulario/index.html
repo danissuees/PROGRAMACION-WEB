@@ -68,7 +68,7 @@
 </head>
 <body>
     <h1>Gestión de Productos</h1>
-    <form id="uploadForm" action="http://localhost:3002/Formulario/" method="POST" enctype="multipart/form-data">
+    <form id="uploadForm" action="http://localhost:3003/Formulario/" method="POST" enctype="multipart/form-data">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
 
@@ -112,7 +112,7 @@
             const formData = new FormData(document.getElementById('uploadForm'));
             
             try {
-                const response = await fetch('http://localhost:3002/Formulario/', {
+                const response = await fetch('http://localhost:3003/Formulario/', {
                     method: 'POST',
                     body: formData
                 });
@@ -132,7 +132,7 @@
        
         document.getElementById('getProducts').onclick = async function() {
             try {
-                const response = await fetch('http://localhost:3002/productos');
+                const response = await fetch('http://localhost:3003/productos');
                 const productos = await response.json();
 
                 const productList = document.getElementById('productList');
@@ -145,7 +145,7 @@
                         <strong>Tipo:</strong> ${producto.tipo} <br>
                         <strong>Precio:</strong> $${producto.precio} <br>
                         <strong>Estado:</strong> ${producto.estado} <br>
-                        <strong>PDF:</strong> <a href="http://localhost:3002/productos/${producto.id || producto.nombre}/pdf" target="_blank">Ver PDF</a>
+                        <strong>PDF:</strong> <a href="http://localhost:3003/productos/${producto.id || producto.nombre}/pdf" target="_blank">Ver PDF</a>
                     `;
                     productList.appendChild(li);
                 });

@@ -8,7 +8,7 @@ const { jsPDF } = require("jspdf");
 const { body, validationResult } = require('express-validator');
 
 const app = express();
-const port = 3002;
+const port = 3003;
 
 app.use(cors());
 app.use(express.json());
